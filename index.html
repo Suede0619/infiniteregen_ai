@@ -87,9 +87,13 @@
         }
 
         .grid-item.combined-box h1 {
-            /* font-size: 2.4rem; */
             margin-bottom: 0;
         }
+
+		.grid-item.combined-box img {
+            max-width: 40%;
+        }
+
 
         .grid-item a {
             text-decoration: none;
@@ -114,6 +118,10 @@
             .two-column-layout {
                 grid-template-columns: 1fr;
             }
+			.grid-item.combined-box img {
+            	max-width: 30%;
+        	}
+
         }
 
         @media (max-width: 576px) {
@@ -129,6 +137,9 @@
             .main-container {
                 padding: 0.5rem;
             }
+			.grid-item.combined-box img {
+            	max-width: 50%;
+        	}
         }
     </style>
 </head>
@@ -138,7 +149,7 @@
             <!-- Left Column with Grid Items -->
             <div class="grid-container">
                 <div class="grid-item combined-box">
-                    <img style="max-width: 20%; border:none;" src="img.png" alt="InfiniteRegen.AI Logo">
+                    <img style="border:none;" src="img.png" alt="InfiniteRegen.AI Logo">
                     <h2><strong>What is InfiniteRegen.AI?</strong></h2>
                 </div>
                 <div class="grid-item combined-box">
